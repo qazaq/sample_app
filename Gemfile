@@ -22,6 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -35,6 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
 #   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'static-pages'
 # end
+  # gem 'pg'
 
 group :development, :test do
 	gem 'rspec'
@@ -60,7 +62,7 @@ end
 
 
 group :production do
-  # gem 'pg'
+  gem 'pg'
   gem 'rails_12factor'
 end
 
