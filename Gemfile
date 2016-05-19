@@ -32,15 +32,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-
+# %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+#   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'static-pages'
+# end
 
 group :development, :test do
+	gem 'rspec'
 
   gem 'rspec-rails'
 
   gem 'sqlite3'
   gem 'byebug'      
-  gem 'web-console'
+  # gem 'web-console' 
   gem 'spring'
 end
 
@@ -48,11 +51,16 @@ group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
   gem 'guard-minitest'
+
+
+  gem 'selenium-webdriver'
+  gem 'capybara'
+
 end
 
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
 end
 
