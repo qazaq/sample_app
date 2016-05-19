@@ -36,7 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
 #   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'static-pages'
 # end
-  # gem 'pg'
+  gem 'pg'
 
 group :development, :test do
 	gem 'rspec'
@@ -62,7 +62,7 @@ end
 
 
 group :production do
-  gem 'pg'
+  
   gem 'rails_12factor'
 end
 
