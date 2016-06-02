@@ -36,17 +36,17 @@ gem 'pg'
 
 gem 'rspec'
 
-
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.4'
   # gem 'sqlite3'
   gem 'byebug'      
   # gem 'web-console' 
   gem 'spring'
 
   gem 'spork-rails'
-  gem 'guard-spork'
+  gem 'guard-rails', require: false
   gem 'childprocess'
 end
 
@@ -56,10 +56,6 @@ group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
   gem 'guard-minitest'
-
-
-  # gem 'selenium-webdriver'
-  # gem 'capybara'
 
 end
 
