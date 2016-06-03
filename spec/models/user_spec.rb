@@ -96,5 +96,4 @@ describe User do
       specify { expect(user_for_invalid_password).to be_falsey }
     end
   end
-
 end
