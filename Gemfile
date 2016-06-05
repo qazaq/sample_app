@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.0'
 gem 'nokogiri'
 
 gem 'rails', '4.2.6'
@@ -16,15 +16,14 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc',  group: :doc
-
-
-
-gem 'rspec'
+gem 'pg'
+gem 'rspec-rails', '~> 3.4'
+gem 'rspec', '~> 3.4'
 
 gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.4'
+  
   # gem 'sqlite3'
   gem 'byebug'      
   # gem 'web-console' 
@@ -51,8 +50,7 @@ end
 # end
 
 group :production do
-  gem 'pg'
-
+  
   gem 'rails_12factor'
 end
 
