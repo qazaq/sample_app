@@ -19,10 +19,10 @@
 
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
-require "rails/all"
+# require "rails/all"
 require 'rspec/rails'
 require 'rails_helper'
-# require 'rspec/autorun'
+require 'rspec/autorun'
 #Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
@@ -97,6 +97,6 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-config.include ApplicationHelper
-config.include Capybara::DSL
+  config.include ApplicationHelper
+  config.include Capybara::DSL
 end

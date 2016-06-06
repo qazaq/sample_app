@@ -19,7 +19,10 @@ gem 'sdoc',  group: :doc
 gem 'pg'
 gem 'rspec-rails', '~> 3.4'
 gem 'rspec', '~> 3.4'
-
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+# gem 'uglifier'
 gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 
 group :development, :test do
