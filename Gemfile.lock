@@ -256,7 +256,7 @@ DEPENDENCIES
   childprocess
   coffee-rails (~> 4.1.0)
   factory_girl_rails
-  faker
+  faker (~> 1.6, >= 1.6.3)
   guard-minitest
   guard-rails
   jbuilder (~> 2.0)
