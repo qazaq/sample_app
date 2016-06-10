@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+attr_accessor :password, :password_confirmation
 describe User do
 
   before do

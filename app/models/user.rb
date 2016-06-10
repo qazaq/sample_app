@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
-  
+  has_secure_password
 	before_save { self.email.downcase! }
 	before_create :create_remember_token
 
@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
 
 
-  has_secure_password
   validates :password, length: { minimum: 6 }
 
   def feed
