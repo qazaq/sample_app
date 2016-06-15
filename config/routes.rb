@@ -2,7 +2,7 @@ require File.expand_path("../../config/environment", __FILE__)
 # require 'rspec/rails'
 # require 'rspec/autorun'
 
-Rails.application.routes.draw do
+SampleApp::Application.routes.draw do
   
   resources :users do
     member do
